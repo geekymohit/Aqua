@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohit.chipz.MainActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:padding="20dp"
+            android:id="@+id/arsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arsenic"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dot"
+                android:visibility="gone"
+                android:src="@drawable/circle"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/fluoride"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fluoride"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/iron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iron"
+            android:textSize="20dp"/>
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/salinity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salinity"
+            android:textSize="20dp"/>
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/nitrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nitrate"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingaction"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:id="@+id/action2"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:id="@+id/action1"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
